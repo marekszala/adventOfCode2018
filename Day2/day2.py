@@ -1,9 +1,10 @@
-from utils import InputFileReader
 import sys
 import os
-sys.path.append("C:\\code\\maszala\\adventcode2018\\utils")
+sys.path.append(os.path.join(os.path.dirname(__file__), '..\\utils'))
 
 inputFileName1 = os.path.join(os.path.dirname(__file__), 'input1.txt')
+
+from utils import InputFileReader
 
 
 def getCharacterHistogram(word):

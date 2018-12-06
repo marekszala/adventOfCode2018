@@ -1,8 +1,9 @@
-from utils import InputFileReader
 import sys
 import os
 
-sys.path.append("C:\\code\\maszala\\adventcode2018\\utils")
+sys.path.append(os.path.join(os.path.dirname(__file__), '..\\utils'))
+
+from utils import InputFileReader
 
 inputFileName1 = os.path.join(os.path.dirname(__file__), 'input.txt')
 inputFileName2 = os.path.join(os.path.dirname(__file__), 'input2.txt')
