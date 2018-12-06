@@ -4,7 +4,7 @@ import os
 
 sys.path.append("C:\\code\\maszala\\adventcode2018\\utils")
 
-inputFileName1 = os.path.join(os.path.dirname(__file__), 'input.txt')
+inputFileName1 = os.path.join(os.path.dirname(__file__), 'input1.txt')
 inputFileName2 = os.path.join(os.path.dirname(__file__), 'input2.txt')
 
 
