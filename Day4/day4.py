@@ -86,13 +86,11 @@ def getTheMostSleepyMinute(quardLog):
     theMostSleepyMinuteValue = 0
     
     for guard in quardLog.keys():
-        # count sleep hours
         guardTheMostSleepyMinuteValue = max(quardLog[guard])
-        guardTheMostSleepyMinute = quardLog[guard].index(guardTheMostSleepyMinuteValue)
 
         if guardTheMostSleepyMinuteValue > theMostSleepyMinuteValue:
             theGuard = guard
-            theMostSleepyMinute = guardTheMostSleepyMinute
+            theMostSleepyMinute = quardLog[guard].index(guardTheMostSleepyMinuteValue)
             theMostSleepyMinuteValue = guardTheMostSleepyMinuteValue
 
     return int(theGuard) * theMostSleepyMinute

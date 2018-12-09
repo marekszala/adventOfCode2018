@@ -16,14 +16,11 @@ def problem1(inputData):
 def problem2(inputData):
     return 0
 
-
 if __name__ == '__main__':
     fileReader = InputFileReader()
 
     problem1Result = problem1(fileReader.readContent(inputFileName1))
+    print ("solution1", problem1Result)
 
     problem2Result = problem2(fileReader.readContent(inputFileName2))
-
-    print (problem1Result)
-
-    print (problem2Result)
+    print ("solution2", problem2Result)
